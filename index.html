@@ -2,37 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohammed Elsayed | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body { font-family: system-ui, sans-serif; margin: 0; padding: 0; background:#050816; color:#f5f5f5; }
-    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-    h1 { font-size: 2.4rem; margin-bottom: .25rem; }
-    h2 { margin-top: 2rem; margin-bottom: .5rem; font-size: 1.4rem; }
-    .tagline { color:#aaa; margin-bottom: 1.5rem; }
-    .pill { display:inline-block; padding:.25rem .7rem; border-radius:999px; border:1px solid #555; font-size:.8rem; margin:.15rem; }
-    ul { padding-left: 1.2rem; }
-    a { color:#4da3ff; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .section { margin-top:1.5rem; }
-  </style>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Mohammed Elsayed</h1>
-    <p class="tagline">19 y/o Software Engineer & Game Developer from Egypt 🇪🇬</p>
-
+    <!-- Header Section -->
     <div class="section">
-      <h2>About me</h2>
-      <p>
-        I enjoy building games, tools, and small experiments using Java, C++, Python, and Godot.
-        Most of my workflow lives in Linux, the terminal, and Git/GitHub.
+      <h1>
+        <span class="gradient-text">Mohammed</span><br>
+        <span>Elsayed</span>
+      </h1>
+      <p class="tagline">19 y/o Software Engineer & Game Developer</p>
+      <p class="location">
+        <span>📍</span> from Egypt 🇪🇬
       </p>
     </div>
 
+    <!-- About Section -->
+    <div class="section">
+      <h2>About me</h2>
+      <div class="cyber-card">
+        <p>
+          I enjoy building games, tools, and small experiments using Java, C++, Python, and Godot.
+          Most of my workflow lives in Linux, the terminal, and Git/GitHub.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tech Stack Section -->
     <div class="section">
       <h2>Tech stack</h2>
-      <p>
+      <div>
         <span class="pill">Java</span>
         <span class="pill">C++</span>
         <span class="pill">Python</span>
@@ -41,26 +50,48 @@
         <span class="pill">Linux</span>
         <span class="pill">Terminal</span>
         <span class="pill">Git & GitHub</span>
-      </p>
+      </div>
     </div>
 
+    <!-- Projects Section -->
     <div class="section">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>First_Game</strong> – first published Godot game prototype on GitHub.</li>
-        <!-- زوّد مشاريع تانية هنا لما تضيف ريبو جديد -->
-      </ul>
+      <div class="project-card">
+        <h3 class="project-title">First_Game</h3>
+        <p>First published Godot game prototype on GitHub.</p>
+        <a href="https://github.com/Mohamed-Elsayed970" target="_blank">View on GitHub →</a>
+      </div>
     </div>
 
+    <!-- Contact Section -->
     <div class="section">
       <h2>Contact</h2>
-      <ul>
-        <li>GitHub: <a href="https://github.com/Mohamed-Elsayed970" target="_blank">github.com/Mohamed-Elsayed970</a></li>
-        <li>Telegram: <a href="https://t.me/Moh970ed" target="_blank">@Moh970ed</a></li>
-        <li>Email: <a href="mailto:mohammedalseyed9007@gmail.com">mohammedalseyed9007@gmail.com</a></li>
-        <!-- حط Discord لو حابب -->
-      </ul>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">Mohamed-Elsayed970</div>
+          <a href="https://github.com/Mohamed-Elsayed970" target="_blank" style="display: none;"></a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">Telegram</div>
+          <div class="contact-value">@Moh970ed</div>
+          <a href="https://t.me/Moh970ed" target="_blank" style="display: none;"></a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">Email</div>
+          <div class="contact-value">mohammedalseyed9007@gmail.com</div>
+          <a href="mailto:mohammedalseyed9007@gmail.com" style="display: none;"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Crafted with <span class="heart">❤</span> using HTML, CSS & JavaScript</p>
     </div>
   </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
