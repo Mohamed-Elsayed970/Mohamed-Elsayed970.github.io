@@ -228,6 +228,9 @@ li {
 .contact-card:nth-child(1) { animation-delay: 0.5s; }
 .contact-card:nth-child(2) { animation-delay: 0.6s; }
 .contact-card:nth-child(3) { animation-delay: 0.7s; }
+.contact-card:nth-child(4) { animation-delay: 0.8s; }
+.contact-card:nth-child(5) { animation-delay: 0.9s; }
+.contact-card:nth-child(6) { animation-delay: 1s; }
 
 .contact-card:hover {
   border-color: var(--magenta);
@@ -328,6 +331,98 @@ li {
   color: var(--magenta);
 }
 
+/* Header Section Styles */
+.header-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container {
+  margin-bottom: 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.4),
+              0 0 60px rgba(217, 70, 239, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(0, 217, 255, 0.3);
+}
+
+.profile-image:hover {
+  box-shadow: 0 0 40px rgba(0, 217, 255, 0.6),
+              0 0 80px rgba(217, 70, 239, 0.4);
+  transform: scale(1.05);
+}
+
+/* About Section Styles */
+.about-intro {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  line-height: 1.8;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.skill-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(0, 217, 255, 0.05);
+  border: 1px solid rgba(0, 217, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background: rgba(0, 217, 255, 0.1);
+  border-color: rgba(0, 217, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 217, 255, 0.1);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  min-width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item h3 {
+  font-size: 1rem;
+  color: var(--cyan);
+  margin: 0 0 0.25rem 0;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 600;
+}
+
+.skill-item p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.about-outro {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: center;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   h1 {
@@ -343,6 +438,10 @@ li {
   }
 
   .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 }
